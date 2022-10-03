@@ -1,29 +1,32 @@
-<!-Find which side of Triagnle is greater among three-->
-
 <!DOCTYPE html>
 <html>
     <head>
         <script>
-            function triangle(){
-                side1 = parseFloat(document.getElementById("side1").value);
-                side2 = parseFloat(document.getElementById("side2").value);
-                side3 = parseFloat(document.getElementById("side3").value);
+            function triangle()
+            {
+                var side1 = parseFloat(document.getElementById("side1").value);
+                var side2 = parseFloat(document.getElementById("side2").value);
+                var side3 = parseFloat(document.getElementById("side3").value);
 
-                if(side1>side2 && side1>side3){
+                if(side1>side2 && side1>side3)
+                {
                     document.getElementById("answer").value = side1;
                 }
-                
-                elseif(side2>side1 && side2>side3){
+            
+                else if(side2>side3)
+                {
                     docuemnt.getElementById("answer").value = side2;
                 }
 
-                elseif(side3>side1 && side3>side1){
+                else
+                {
                     docuemnt.getElementById("answer").value = side3;
                 }
 
-                
             }
+            
         </script>
+        
     </head>
 
     <body>
